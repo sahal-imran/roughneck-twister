@@ -1,0 +1,24 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  /* font-family: 'Cinzel', serif; */
+  font-family: "Poppins", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+#Hero {
+  background-image: url("/assets/pictures/Home/heroBG.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media screen and (max-width:'900') {
+  #Hero {
+    background-size: contain;
+  }
+}
