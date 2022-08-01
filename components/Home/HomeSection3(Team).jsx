@@ -22,7 +22,7 @@ function HomeSection3() {
 
           {/* Left */}
           <Box sx={{ width: { md: '50%', xs: '100%' }, display: 'flex', justifyContent: 'center', alignItems: 'start', flexDirection: 'column', }} >
-            <Topography variant='h2' sx={{ fontFamily: 'Cinzel', fontSize: '80px', lineHeight: '107.84px', fontWeight: 700, color: '#FBFAF5', textTransform: 'uppercase',position: 'relative', "&:before": { content: '""', height: '5px', width: '50px', position: 'absolute', bottom: '0px', right: '0px', background: 'white' } }} >
+            <Topography variant='h2' sx={{ fontFamily: 'Cinzel', fontSize: {md:'80px',xs:'60px'}, lineHeight: '107.84px', fontWeight: 700, color: '#FBFAF5', textTransform: 'uppercase',position: 'relative', "&:before": { content: '""', height: '5px', width: '50px', position: 'absolute', bottom: '0px', right: '0px', background: 'white' } }} >
               Team
             </Topography>
             <Topography variant='h2' sx={{

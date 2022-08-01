@@ -10,6 +10,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import Drawer from 'react-modern-drawer';
 import 'react-modern-drawer/dist/index.css';
+import { useRouter } from 'next/router';
 
 // Assets imports
 import Logo from "../../public/assets/SVG Icons/LOGO.svg";
@@ -18,6 +19,7 @@ import Instagam from "../../public/assets/SVG Icons/instagam.svg";
 import Twitter from "../../public/assets/SVG Icons/twitter.svg";
 
 function Appbar() {
+  const router = useRouter();
 
   const [isOpen, setIsOpen] = useState(false)
   const toggleDrawer = () => {
@@ -26,7 +28,7 @@ function Appbar() {
 
   return (
     <>
-      <Box sx={{ width: '100%', height: '80px', display: 'flex', justifyContent: 'center', alignItems: 'center', backgroundImage: 'linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0.05))', position: 'relative', zIndex: '999' }} >
+      <Box sx={router.pathname === '/' ? { width: '100%', height: '80px', display: 'flex', justifyContent: 'center', alignItems: 'center', backgroundImage: 'linear-gradient(rgba(22,2,31,1), rgba(22,2,31,0.05))', position: 'relative', zIndex: '999' } : { width: '100%', height: '80px', display: 'flex', justifyContent: 'center', alignItems: 'center', backgroundImage: 'linear-gradient(rgba(22,2,31,1), rgba(22,2,31,1))', position: 'relative', zIndex: '999' }} >
         <Container maxWidth="big" sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }} >
 
           {/* Logo Here */}
@@ -36,7 +38,7 @@ function Appbar() {
 
           {/* Nav Menu */}
           <Box sx={{ display: { md: 'flex', xs: 'none' }, justifyContent: 'center', alignItems: 'center' }} >
-            <Link href="" >
+            <Link href="/" >
               <AnchorLink className='NavLink' sx={{ fontFamily: ['Poppins', 'sans - serif'], fontSize: '16px', lineHeight: '24px', fontWeight: 600, color: 'rgba(255, 255, 255, 1)', mr: '30px', transition: 'all 0.3s ease', textDecoration: 'none', cursor: 'pointer', "&:hover": { color: '#FBD005' } }} >Verify</AnchorLink>
             </Link>
             <Link href="" >
@@ -45,7 +47,7 @@ function Appbar() {
             <Link href="" >
               <AnchorLink className='NavLink' sx={{ fontFamily: ['Poppins', 'sans - serif'], fontSize: '16px', lineHeight: '24px', fontWeight: 600, color: 'rgba(255, 255, 255, 1)', mr: '30px', transition: 'all 0.3s ease', textDecoration: 'none', cursor: 'pointer', "&:hover": { color: '#FBD005' } }} >Lore</AnchorLink>
             </Link>
-            <Link href="" >
+            <Link href="/whitepaper" >
               <AnchorLink className='NavLink' sx={{ fontFamily: ['Poppins', 'sans - serif'], fontSize: '16px', lineHeight: '24px', fontWeight: 600, color: 'rgba(255, 255, 255, 1)', mr: '30px', transition: 'all 0.3s ease', textDecoration: 'none', cursor: 'pointer', "&:hover": { color: '#FBD005' } }} >Whitepaper</AnchorLink>
             </Link>
             <Link href="" >

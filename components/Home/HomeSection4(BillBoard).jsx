@@ -12,6 +12,7 @@ import CustomizedButton from '../Common/CustomizedButton';
 import Conquered from "../../public/assets/pictures/Home/Conquered.svg";
 import Fearuers from "../../public/assets/pictures/Home/fearuers.svg";
 import Plannet from "../../public/assets/pictures/Home/planet.svg";
+import SideLine from "../../public/assets/pictures/Home/sideline.svg";
 
 function HomeSection4() {
 
@@ -41,12 +42,12 @@ function HomeSection4() {
 
   return (
     <>
-      <Box sx={{ width: '100%', minHeight: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center', background: '#16021F', py: { md: 0, xs: 8 }, mt: { md: 0, xs: '-1px' } }} >
+      <Box sx={{ width: '100%', minHeight: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center', background: '#16021F', py: { md: 0, xs: 8 }, mt: { md: 0, xs: '-1px' }, position: 'relative' }} >
         <Container maxWidth="big" sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexDirection: { md: 'row', xs: 'column' } }} >
 
           {/* Left */}
           <Box sx={{ width: { md: '35%', xs: '100%' }, display: 'flex', justifyContent: 'center', alignItems: 'start', flexDirection: 'column', }} >
-            <Topography variant='h2' sx={{ fontFamily: 'Cinzel', fontSize: '80px', lineHeight: '107.84px', fontWeight: 700, color: '#FBFAF5', textTransform: 'uppercase', position: 'relative', "&:before": { content: '""', height: '5px', width: '50px', position: 'absolute', bottom: '0px', right: '0px', background: 'white' } }} >
+            <Topography variant='h2' sx={{ fontFamily: 'Cinzel', fontSize: {md:'80px',xs:'60px'}, lineHeight: '107.84px', fontWeight: 700, color: '#FBFAF5', textTransform: 'uppercase', position: 'relative', "&:before": { content: '""', height: '5px', width: '50px', position: 'absolute', bottom: '0px', right: '0px', background: 'white' } }} >
               Billboard
             </Topography>
 
@@ -57,7 +58,7 @@ function HomeSection4() {
                   Conquered
                 </Topography>
               </Box>
-              
+
               <Box onClick={() => Fighting_Clicked()} sx={{ width: '136px', height: '136px', border: '6px dashed #FBFAF5', borderRadius: '50%', transition: 'all 0.3s ease', display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer', "&:hover": { border: '6px dashed #16021F', background: 'linear-gradient(180deg, #FBD005 0%, #F58320 86.46%)' }, "&:hover h2": { color: 'rgba(22, 2, 31, 1)' }, mt: 4 }} >
                 <Topography variant='h2' sx={{ fontFamily: 'Cinzel', fontSize: '16px', lineHeight: '21.57px', fontWeight: 700, color: 'rgba(251, 208, 5, 1)', textTransform: 'capitalize' }} >
                   Fighting
@@ -74,7 +75,7 @@ function HomeSection4() {
           </Box>
 
           {/* Right */}
-          <Box sx={{ width: { md: '65%', xs: '100%' }, minHeight: '530px', display: 'flex', justifyContent: 'center', alignItems: 'center',position:'relative',mt:{md:0,xs:8} }} >
+          <Box sx={{ width: { md: '65%', xs: '100%' }, minHeight: '530px', display: 'flex', justifyContent: 'center', alignItems: 'center', position: 'relative', mt: { md: 0, xs: 8 } }} >
             <Box>
               {Conquer && <Image src={Conquered} layout={'fill'} objectFit={'contain'} />}
               {Fighting && <Image src={Fearuers} layout={'fill'} objectFit={'contain'} />}
@@ -82,6 +83,10 @@ function HomeSection4() {
             </Box>
           </Box>
         </Container>
+
+        <Box sx={{position:'absolute',top:'50%px',left:'0px'}} >
+          <Image src={SideLine} width={36} height={478} objectFit={'contain'} />
+        </Box>
       </Box>
     </>
   )
