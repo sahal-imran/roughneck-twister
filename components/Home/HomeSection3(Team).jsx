@@ -26,10 +26,10 @@ function HomeSection3() {
               Team
             </Topography>
             <Topography variant='h2' sx={{
-              fontFamily: ['Poppins', 'sans - serif'], fontSize: '18px', lineHeight: {
+              fontFamily: ['Poppins', 'sans - serif'],fontSize: { md: '18px', xs: '16px' }, lineHeight: {
                 md: '46px',
-                xs: '30px'
-              }, fontWeight: 500, color: '#FBFAF5', textTransform: 'uppercase', mt: 5
+                xs: '24px'
+            }, fontWeight: { md: 500, xs: 300 }, color: '#FBFAF5', textTransform: 'uppercase', mt: 5
             }} >
               Lorem ipsum dolor sit amet, consectetur adipisci elit. Vestibulum varius, metus eu pretium auctor, dui arcure dui, at euismod orci quam et est. Ut quis mi ruum, venenatis ipsum in, semper magna. is <br />
               <br />

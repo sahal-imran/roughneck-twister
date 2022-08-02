@@ -16,17 +16,14 @@ function Hero() {
         <>
             <Box sx={{ width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', background: '#16021F', py: { md: 10, xs: 8 }, mt: { md: 0, xs: '-1px' } }} >
                 <Container maxWidth="big" sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }} >
-                    <Topography variant='h2' sx={{ fontFamily: 'Cinzel', fontSize: { md: '80px', xs: '60px' }, lineHeight: '107.84px', fontWeight: 700, color: '#FBFAF5', textTransform: 'uppercase' }} >
+                    <Topography variant='h2' sx={{ fontFamily: 'Cinzel', fontSize: { md: '80px', xs: '46px' }, lineHeight: {md:'107.84px'}, fontWeight: 700, color: '#FBFAF5', textTransform: 'uppercase' }} >
                         Whitepaper
                     </Topography>
                     <Topography variant='h2' sx={{
-                        fontFamily: ['Poppins', 'sans - serif'], fontSize: {
-                            md: '18px',
-                            xs: '16px'
-                        }, lineHeight: {
+                        fontFamily: ['Poppins', 'sans - serif'], fontSize: { md: '18px', xs: '16px' }, lineHeight: {
                             md: '46px',
-                            xs: '30px'
-                        }, fontWeight: 500, color: '#FBFAF5', textTransform: 'uppercase', textAlign: 'center', mt: 5, width: { md: '80%' }
+                            xs: '24px'
+                        }, fontWeight: { md: 500, xs: 300 }, color: '#FBFAF5', textTransform: 'uppercase', textAlign: 'center', mt:{md:5,xs:2}, width: { md: '80%' }
                     }} >
                         Lorem ipsum dolor sit amet, consectetur adipisci elit. Vestibulum varius, metus eu pretium auctor, dui arcure dui, at euismod orci quam et est. Ut quis mi ruum, venenatis ipsum in, semper magna. is eu quam ultricies, elementum etus nec, sollicitudin sem. Integer lectus diam, tempor ac finibus vel, tempor sit amet ipsum.metus eu pretium auctor, dui arcu ornare dui, t euismod orci quam et
                     </Topography>

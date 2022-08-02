@@ -29,13 +29,10 @@ function OurIntro() {
                                 Into the rabbit hole
                             </Topography>
                             <Topography variant='h2' sx={{
-                                fontFamily: ['Poppins', 'sans - serif'], fontSize: {
-                                    md: '18px',
-                                    xs: '16px'
-                                }, lineHeight: {
+                                fontFamily: ['Poppins', 'sans - serif'], fontSize: { md: '18px', xs: '16px' }, lineHeight: {
                                     md: '46px',
-                                    xs: '30px'
-                                }, fontWeight: 500, color: '#FBFAF5', textTransform: 'uppercase', mt: { md: 5, xs: 3 }
+                                    xs: '24px'
+                                }, fontWeight: { md: 500, xs: 300 }, color: '#FBFAF5', textTransform: 'uppercase', mt: { md: 5, xs: 3 }
                             }} >
                                 Lorem ipsum dolor sit amet, consectetur adipisci elit. Vestibulum varius, metus eu pretium auctor, dui arcure dui, at euismod orci quam et est. Ut quis mi ruum, venenatis ipsum in, semper magna. is eu quam ultricies, elementum etus nec, sollicitudin sem. Integer lectus diam, tempor ac finibus vel,
                             </Topography>
