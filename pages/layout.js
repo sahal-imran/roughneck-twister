@@ -1,4 +1,5 @@
 import Appbar from "../components/Headers/Appbar";
+import Player from "../components/AudioPlayer/Player";
 
 
 // MUI Theme customize
@@ -24,6 +25,7 @@ export default function Layout({ children }) {
     <>
     <ThemeProvider theme={theme} >
       <Appbar />
+      <Player />
       <main>{children}</main>
     </ThemeProvider>
     </>
