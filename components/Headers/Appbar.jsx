@@ -104,21 +104,21 @@ function Appbar() {
             {/* Nav Menu */}
             <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', width: '100%', mt: 4 }} >
               <Link href="/" >
-                <AnchorLink className='NavLink' sx={{ fontFamily: ['Poppins', 'sans - serif'], fontSize: '16px', lineHeight: '24px', fontWeight: 600, color: 'rgba(255, 255, 255, 1)', mb: '18px', width: '100%', borderBottom: '1px solid white', transition: 'all 0.3s ease', textDecoration: 'none', cursor: 'pointer', px: 2, pb: 1, "&:hover": { color: '#FBD005' } }} >Home</AnchorLink>
+                <AnchorLink onClick={toggleDrawer} className='NavLink' sx={{ fontFamily: ['Poppins', 'sans - serif'], fontSize: '16px', lineHeight: '24px', fontWeight: 600, color: 'rgba(255, 255, 255, 1)', mb: '18px', width: '100%', borderBottom: '1px solid white', transition: 'all 0.3s ease', textDecoration: 'none', cursor: 'pointer', px: 2, pb: 1, "&:hover": { color: '#FBD005' } }} >Home</AnchorLink>
               </Link>
               <Link href="/gallery" >
-                <AnchorLink className='NavLink' sx={{ fontFamily: ['Poppins', 'sans - serif'], fontSize: '16px', lineHeight: '24px', fontWeight: 600, color: 'rgba(255, 255, 255, 1)', mb: '18px', width: '100%', borderBottom: '1px solid white', transition: 'all 0.3s ease', textDecoration: 'none', cursor: 'pointer', px: 2, pb: 1, "&:hover": { color: '#FBD005' } }} >Gallery</AnchorLink>
+                <AnchorLink onClick={toggleDrawer} className='NavLink' sx={{ fontFamily: ['Poppins', 'sans - serif'], fontSize: '16px', lineHeight: '24px', fontWeight: 600, color: 'rgba(255, 255, 255, 1)', mb: '18px', width: '100%', borderBottom: '1px solid white', transition: 'all 0.3s ease', textDecoration: 'none', cursor: 'pointer', px: 2, pb: 1, "&:hover": { color: '#FBD005' } }} >Gallery</AnchorLink>
               </Link>
               <Link href="" >
-                <AnchorLink className='NavLink' sx={{ fontFamily: ['Poppins', 'sans - serif'], fontSize: '16px', lineHeight: '24px', fontWeight: 600, color: 'rgba(255, 255, 255, 1)', mb: '18px', width: '100%', borderBottom: '1px solid white', transition: 'all 0.3s ease', textDecoration: 'none', cursor: 'pointer', px: 2, pb: 1, "&:hover": { color: '#FBD005' } }} >Lore</AnchorLink>
+                <AnchorLink onClick={toggleDrawer} className='NavLink' sx={{ fontFamily: ['Poppins', 'sans - serif'], fontSize: '16px', lineHeight: '24px', fontWeight: 600, color: 'rgba(255, 255, 255, 1)', mb: '18px', width: '100%', borderBottom: '1px solid white', transition: 'all 0.3s ease', textDecoration: 'none', cursor: 'pointer', px: 2, pb: 1, "&:hover": { color: '#FBD005' } }} >Lore</AnchorLink>
               </Link>
               <Link href="/whitepaper" >
-                <AnchorLink className='NavLink' sx={{ fontFamily: ['Poppins', 'sans - serif'], fontSize: '16px', lineHeight: '24px', fontWeight: 600, color: 'rgba(255, 255, 255, 1)', mb: '18px', width: '100%', borderBottom: '1px solid white', transition: 'all 0.3s ease', textDecoration: 'none', cursor: 'pointer', px: 2, pb: 1, "&:hover": { color: '#FBD005' } }} >Whitepaper</AnchorLink>
+                <AnchorLink onClick={toggleDrawer} className='NavLink' sx={{ fontFamily: ['Poppins', 'sans - serif'], fontSize: '16px', lineHeight: '24px', fontWeight: 600, color: 'rgba(255, 255, 255, 1)', mb: '18px', width: '100%', borderBottom: '1px solid white', transition: 'all 0.3s ease', textDecoration: 'none', cursor: 'pointer', px: 2, pb: 1, "&:hover": { color: '#FBD005' } }} >Whitepaper</AnchorLink>
               </Link>
               <Link href="/roadmap" >
-                <AnchorLink className='NavLink' sx={{ fontFamily: ['Poppins', 'sans - serif'], fontSize: '16px', lineHeight: '24px', fontWeight: 600, color: 'rgba(255, 255, 255, 1)', mb: '18px', width: '100%', borderBottom: '1px solid white', transition: 'all 0.3s ease', textDecoration: 'none', cursor: 'pointer', px: 2, pb: 1, "&:hover": { color: '#FBD005' } }} >Roadmap</AnchorLink>
+                <AnchorLink onClick={toggleDrawer} className='NavLink' sx={{ fontFamily: ['Poppins', 'sans - serif'], fontSize: '16px', lineHeight: '24px', fontWeight: 600, color: 'rgba(255, 255, 255, 1)', mb: '18px', width: '100%', borderBottom: '1px solid white', transition: 'all 0.3s ease', textDecoration: 'none', cursor: 'pointer', px: 2, pb: 1, "&:hover": { color: '#FBD005' } }} >Roadmap</AnchorLink>
               </Link><Link href="" >
-                <AnchorLink className='NavLink' sx={{ fontFamily: ['Poppins', 'sans - serif'], fontSize: '16px', lineHeight: '24px', fontWeight: 600, color: 'rgba(255, 255, 255, 1)', transition: 'all 0.3s ease', textDecoration: 'none', cursor: 'pointer', width: '100%', borderBottom: '1px solid white', px: 2, pb: 1, "&:hover": { color: '#FBD005' } }} >Intro</AnchorLink>
+                <AnchorLink onClick={toggleDrawer} className='NavLink' sx={{ fontFamily: ['Poppins', 'sans - serif'], fontSize: '16px', lineHeight: '24px', fontWeight: 600, color: 'rgba(255, 255, 255, 1)', transition: 'all 0.3s ease', textDecoration: 'none', cursor: 'pointer', width: '100%', borderBottom: '1px solid white', px: 2, pb: 1, "&:hover": { color: '#FBD005' } }} >Intro</AnchorLink>
               </Link>
             </Box>
 
